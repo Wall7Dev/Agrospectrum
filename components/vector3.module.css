@@ -1,0 +1,16 @@
+.vectorDiv {
+  width: 14px;
+  margin: 0 !important;
+  position: absolute;
+  top: 1268.5px;
+  left: 845.4px;
+  background: linear-gradient(
+    180deg,
+    rgba(187, 212, 50, 0.3),
+    rgba(240, 192, 36, 0.3)
+  );
+  filter: blur(277.51px);
+  border: 0.8px solid var(--color-black);
+  box-sizing: border-box;
+  height: 19.6px;
+}
