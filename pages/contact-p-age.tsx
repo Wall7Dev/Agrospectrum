@@ -65,11 +65,11 @@ const ContactPAge: NextPage = () => {
   }, [router]);
 
   const onMediaClick = useCallback(() => {
-    router.push("/media");
+    router.push("/media3");
   }, [router]);
 
   const onLinkPricing4Click = useCallback(() => {
-    router.push("/media");
+    router.push("/media3");
   }, [router]);
 
   const openDrwawerMenu = useCallback(() => {

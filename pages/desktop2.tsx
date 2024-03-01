@@ -7,7 +7,7 @@ const Desktop2: NextPage = () => {
   const router = useRouter();
 
   const onOurMediaTextClick = useCallback(() => {
-    router.push("/media");
+    router.push("/media3");
   }, [router]);
 
   const onBtnContainer1Click = useCallback(() => {

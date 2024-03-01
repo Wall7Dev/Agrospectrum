@@ -79,7 +79,7 @@ const DrwawerMenu: NextPage<DrwawerMenuType> = ({ onClose }) => {
   }, [router]);
 
   const onMediaClick = useCallback(() => {
-    router.push("/media");
+    router.push("/media3");
   }, [router]);
 
   const onCareersClick = useCallback(() => {

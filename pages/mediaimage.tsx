@@ -7,7 +7,7 @@ const Mediaimage: NextPage = () => {
   const router = useRouter();
 
   const onOurMediaTextClick = useCallback(() => {
-    router.push("/media");
+    router.push("/media3");
   }, [router]);
 
   return (

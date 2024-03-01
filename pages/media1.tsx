@@ -62,11 +62,11 @@ const Media1: NextPage = () => {
   }, [router]);
 
   const onMediaClick = useCallback(() => {
-    router.push("/media");
+    router.push("/media3");
   }, [router]);
 
   const onLinkPricing4Click = useCallback(() => {
-    router.push("/media");
+    router.push("/media3");
   }, [router]);
 
   const openDrwawerMenu = useCallback(() => {
@@ -90,11 +90,11 @@ const Media1: NextPage = () => {
   }, [router]);
 
   const onOurMediaTextClick = useCallback(() => {
-    router.push("/media");
+    router.push("/media3");
   }, [router]);
 
   const onButtonContainerClick = useCallback(() => {
-    router.push("/media");
+    router.push("/media3");
   }, [router]);
 
   const onBtnContainer1Click = useCallback(() => {

@@ -3,9 +3,9 @@ import { useState, useCallback, useEffect } from "react";
 import { useRouter } from "next/router";
 import DrwawerMenu from "../components/drwawer-menu";
 import PortalDrawer from "../components/portal-drawer";
-import styles from "./media3.module.css";
+import styles from "./media.module.css";
 
-const Media3: NextPage = () => {
+const Media: NextPage = () => {
   const router = useRouter();
   const [isDrwawerMenuOpen, setDrwawerMenuOpen] = useState(false);
 
@@ -62,11 +62,11 @@ const Media3: NextPage = () => {
   }, [router]);
 
   const onMediaClick = useCallback(() => {
-    router.push("/media");
+    router.push("/media3");
   }, [router]);
 
   const onLinkPricing4Click = useCallback(() => {
-    router.push("/media");
+    router.push("/media3");
   }, [router]);
 
   const openDrwawerMenu = useCallback(() => {
@@ -85,16 +85,12 @@ const Media3: NextPage = () => {
     router.push("/contact-p-age");
   }, [router]);
 
-  const onCardText1Click = useCallback(() => {
-    router.push("/blog-page3");
+  const onOurMediaTextClick = useCallback(() => {
+    router.push("/media3");
   }, [router]);
 
-  const onTextClick = useCallback(() => {
-    router.push("/media");
-  }, [router]);
-
-  const onBtnContainer1Click = useCallback(() => {
-    router.push("/media1");
+  const onButtonContainerClick = useCallback(() => {
+    router.push("/media3");
   }, [router]);
 
   useEffect(() => {
@@ -127,62 +123,6 @@ const Media3: NextPage = () => {
     };
   }, []);
 
-  const onFrameContainerClick = useCallback(() => {
-    router.push("/blog-page3");
-  }, [router]);
-
-  const onMrCastroAwards1Click = useCallback(() => {
-    router.push("/blog-page3");
-  }, [router]);
-
-  const onFrameContainer1Click = useCallback(() => {
-    router.push("/blog-page3");
-  }, [router]);
-
-  const onFrameContainer2Click = useCallback(() => {
-    router.push("/blog-page3");
-  }, [router]);
-
-  const onFrameContainer12Click = useCallback(() => {
-    router.push("/blog-page1");
-  }, [router]);
-
-  const onImage3Click = useCallback(() => {
-    router.push("/blog-page1");
-  }, [router]);
-
-  const onFrameContainer3Click = useCallback(() => {
-    router.push("/blog-page1");
-  }, [router]);
-
-  const onFrameContainer4Click = useCallback(() => {
-    router.push("/blog-page2");
-  }, [router]);
-
-  const onFrameContainer5Click = useCallback(() => {
-    router.push("/blog-page2");
-  }, [router]);
-
-  const onImage1Click = useCallback(() => {
-    router.push("/blog-page2");
-  }, [router]);
-
-  const onFrameContainer13Click = useCallback(() => {
-    router.push("/blog-page2");
-  }, [router]);
-
-  const onFrameContainer14Click = useCallback(() => {
-    router.push("/blog-page");
-  }, [router]);
-
-  const onDownload6ImageClick = useCallback(() => {
-    router.push("/blog-page");
-  }, [router]);
-
-  const onFrameContainer15Click = useCallback(() => {
-    router.push("/blog-page");
-  }, [router]);
-
   const onFrameButtonClick = useCallback(() => {
     router.push("/contact-p-age");
   }, [router]);
@@ -195,7 +135,7 @@ const Media3: NextPage = () => {
     router.push("/about-u-s-page");
   }, [router]);
 
-  const onFrameContainer32Click = useCallback(() => {
+  const onFrameContainer3Click = useCallback(() => {
     router.push("/projectspartners");
   }, [router]);
 
@@ -361,7 +301,7 @@ const Media3: NextPage = () => {
             </div>
           </nav>
         </header>
-        <div className={styles.desktop}>
+        <div className={styles.mediaimage0}>
           <img
             className={styles.bottomBlurIcon}
             alt=""
@@ -372,16 +312,16 @@ const Media3: NextPage = () => {
               <div className={styles.card}>
                 <div className={styles.img}>
                   <img className={styles.blurIcon} alt="" src="/blur@2x.png" />
-                  <img className={styles.imgIcon} alt="" src="/img121@2x.png" />
+                  <img className={styles.imgIcon} alt="" src="/img12@2x.png" />
                 </div>
               </div>
               <div className={styles.events}>Events</div>
             </div>
-            <div className={styles.cardText1} onClick={onCardText1Click}>
+            <div className={styles.cardText1}>
               <div className={styles.card}>
                 <div className={styles.img}>
                   <img className={styles.blurIcon} alt="" src="/blur4@2x.png" />
-                  <img className={styles.imgIcon} alt="" src="/img131@2x.png" />
+                  <img className={styles.imgIcon} alt="" src="/img13@2x.png" />
                 </div>
               </div>
               <div className={styles.events}>Awards</div>
@@ -389,15 +329,11 @@ const Media3: NextPage = () => {
             <div className={styles.cardText2}>
               <div className={styles.card}>
                 <div className={styles.img}>
-                  <img
-                    className={styles.blurIcon}
-                    alt=""
-                    src="/blur71@2x.png"
-                  />
-                  <img className={styles.imgIcon} alt="" src="/img141@2x.png" />
+                  <img className={styles.blurIcon} alt="" src="/blur7@2x.png" />
+                  <img className={styles.imgIcon} alt="" src="/img14@2x.png" />
                 </div>
               </div>
-              <div className={styles.events}>Input Credit</div>
+              <div className={styles.events}>Tidewave</div>
             </div>
             <div className={styles.cardText3}>
               <div className={styles.card3}>
@@ -407,38 +343,34 @@ const Media3: NextPage = () => {
                     alt=""
                     src="/blur3@2x.png"
                   />
-                  <img
-                    className={styles.imgIcon3}
-                    alt=""
-                    src="/img151@2x.png"
-                  />
+                  <img className={styles.imgIcon3} alt="" src="/img15@2x.png" />
                 </div>
               </div>
               <div className={styles.events}>Mountaineer</div>
             </div>
           </div>
-          <div className={styles.ourMedia}>Our Media</div>
+          <div className={styles.ourMedia} onClick={onOurMediaTextClick}>
+            Our Media
+          </div>
           <div className={styles.btns}>
             <div className={styles.btn}>
               <img
                 className={styles.bgBlurIcon}
                 alt=""
-                src="/bg-blur11@2x.png"
+                src="/bg-blur1@2x.png"
               />
-              <div className={styles.button}>
-                <div className={styles.div} onClick={onTextClick}>
-                  ←
-                </div>
+              <div className={styles.button} onClick={onButtonContainerClick}>
+                <div className={styles.div}>←</div>
               </div>
             </div>
-            <div className={styles.btn1} onClick={onBtnContainer1Click}>
+            <div className={styles.btn1}>
               <img
                 className={styles.bgBlurIcon}
                 alt=""
-                src="/bg-blur61@2x.png"
+                src="/bg-blur6@2x.png"
               />
-              <div className={styles.button}>
-                <div className={styles.div1}>→</div>
+              <div className={styles.button1}>
+                <div className={styles.div}>→</div>
               </div>
             </div>
           </div>
@@ -452,583 +384,121 @@ const Media3: NextPage = () => {
           <div className={styles.games}>Seminars</div>
           <div className={styles.games}>Games</div>
         </div>
-        <section className={styles.blogpost}>
-          <section className={styles.teamFaqCta}>
-            <div className={styles.blogNewsParent}>
-              <b className={styles.blogNews}>{`Blog & News`}</b>
-              <b className={styles.learnRecentNewsContainer}>
-                <p className={styles.learnRecentPractices}>
-                  Learn Recent Practices
-                </p>
-                <p className={styles.learnRecentPractices}>News and Blogs</p>
-              </b>
-              <section className={styles.col1Parent} data-animate-on-scroll>
-                <section className={styles.col1}>
-                  <div className={styles.frameParent} data-animate-on-scroll>
-                    <div
-                      className={styles.mrCastroAwards1Parent}
-                      onClick={onFrameContainerClick}
-                    >
-                      <img
-                        className={styles.mrCastroAwards1}
-                        alt=""
-                        src="/mr-castro-awards-11@2x.png"
-                        onClick={onMrCastroAwards1Click}
-                      />
-                      <div className={styles.parent}>
-                        <div className={styles.div2}>23</div>
-                        <div className={styles.nov}>Nov</div>
-                      </div>
-                    </div>
-                    <div
-                      className={styles.frameWrapper}
-                      onClick={onFrameContainer1Click}
-                    >
-                      <div
-                        className={styles.agrospectrumLimitedWinsTwoParent}
-                        onClick={onFrameContainer2Click}
-                      >
-                        <div
-                          className={styles.agrospectrumLimitedWinsContainer}
-                        >
-                          <p
-                            className={styles.learnRecentPractices}
-                          >{`Agrospectrum Limited wins two `}</p>
-                          <p className={styles.learnRecentPractices}>
-                            prestigious awards
-                          </p>
-                        </div>
-                        <div className={styles.inTheGhanaianContainer}>
-                          <p className={styles.learnRecentPractices}>
-                            In the Ghanaian space and beyond we at
-                          </p>
-                          <p className={styles.agropspectrumHas}>
-                            Agropspectrum has equipped...
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className={styles.baseParent}>
-                      <div className={styles.base} />
-                      <div className={styles.byAudreyK}>By Audrey K</div>
-                      <div className={styles.byAudreyK}>2 Comments</div>
-                    </div>
-                  </div>
-                  <div
-                    className={styles.frameGroup}
-                    onClick={onFrameContainer12Click}
-                    data-animate-on-scroll
-                  >
-                    <div className={styles.image3Parent}>
-                      <img
-                        className={styles.image3Icon}
-                        alt=""
-                        src="/image-31@2x.png"
-                        onClick={onImage3Click}
-                      />
-                      <div className={styles.frameContainer}>
-                        <div className={styles.group}>
-                          <div className={styles.div3}>20</div>
-                          <div className={styles.dec}>DEC</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className={styles.frameDiv}>
-                      <div
-                        className={styles.digitalisationAGameChangerParent}
-                        onClick={onFrameContainer3Click}
-                      >
-                        <div className={styles.digitalisationAGameContainer}>
-                          <p
-                            className={styles.learnRecentPractices}
-                          >{`Digitalisation, A Game Changer For `}</p>
-                          <p className={styles.learnRecentPractices}>
-                            Ghanaian Farmers.
-                          </p>
-                        </div>
-                        <div className={styles.inTheGhanaianContainer}>
-                          <p
-                            className={styles.learnRecentPractices}
-                          >{`In sub-Saharan Africa, smallholder farmers `}</p>
-                          <p className={styles.learnRecentPractices}>
-                            make up the largest cohort. They ....
-                          </p>
-                        </div>
-                      </div>
-                      <div className={styles.baseGroup}>
-                        <div className={styles.base} />
-                        <div className={styles.byAudreyK}>By Audrey K</div>
-                        <div className={styles.byAudreyK}>2 Comments</div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <div className={styles.frameParent1}>
-                  <div
-                    className={styles.frameParent2}
-                    onClick={onFrameContainer4Click}
-                  >
-                    <div
-                      className={styles.image1Parent}
-                      onClick={onFrameContainer5Click}
-                    >
-                      <img
-                        className={styles.image1Icon}
-                        alt=""
-                        src="/image-11@2x.png"
-                        onClick={onImage1Click}
-                      />
-                      <div className={styles.parent1}>
-                        <div className={styles.div4}>25</div>
-                        <div className={styles.dec1}>DEC</div>
-                      </div>
-                    </div>
-                    <div
-                      className={styles.enhancingAgriculturalResilieParent}
-                      onClick={onFrameContainer13Click}
-                    >
-                      <div
-                        className={styles.enhancingAgriculturalResilieContainer}
-                      >
-                        <p className={styles.learnRecentPractices}>
-                          <span className={styles.e}>E</span>
-                          <span
-                            className={styles.nhancingAgriculturalResilien}
-                          >{`NHANCING AGRICULTURAL RESILIENCE `}</span>
-                        </p>
-                        <p className={styles.throughIgnitiasClimate}>
-                          THROUGH IGNITIA’S CLIMATE MONITORING.
-                        </p>
-                      </div>
-                      <div className={styles.inTheGhanaianContainer}>
-                        <p
-                          className={styles.learnRecentPractices}
-                        >{`Agrospectrum Limited, a platform solution `}</p>
-                        <p
-                          className={styles.learnRecentPractices}
-                        >{`that aggregates data of all the.... `}</p>
-                      </div>
-                    </div>
-                    <div className={styles.baseContainer}>
-                      <div className={styles.base} />
-                      <div className={styles.byAudreyK}>By Morenika O</div>
-                      <div className={styles.byAudreyK}>2 Comments</div>
-                    </div>
-                  </div>
-                  <div
-                    className={styles.frameParent3}
-                    onClick={onFrameContainer14Click}
-                  >
-                    <div className={styles.download6Parent}>
-                      <img
-                        className={styles.download6Icon}
-                        alt=""
-                        src="/download-622@2x.png"
-                        onClick={onDownload6ImageClick}
-                      />
-                      <div className={styles.frameContainer}>
-                        <div className={styles.group}>
-                          <div className={styles.div5}>25</div>
-                          <div className={styles.dec2}>DEC</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      className={styles.enhancingAgriculturalResilieParent}
-                      onClick={onFrameContainer15Click}
-                    >
-                      <div
-                        className={styles.enhancingAgriculturalResilieContainer}
-                      >
-                        <p className={styles.learnRecentPractices}>
-                          <span className={styles.m}>M</span>
-                          <span
-                            className={styles.nhancingAgriculturalResilien}
-                          >{`AY AND LOTTE INTERNATIONAL `}</span>
-                        </p>
-                        <p className={styles.throughIgnitiasClimate}>
-                          PARTNERS AGROSPECTRUM.
-                        </p>
-                      </div>
-                      <div className={styles.inTheGhanaianContainer}>
-                        <p
-                          className={styles.learnRecentPractices}
-                        >{`May and Lotte International; a Ghanaian `}</p>
-                        <p className={styles.learnRecentPractices}>
-                          agricultural company....
-                        </p>
-                      </div>
-                    </div>
-                    <div className={styles.baseParent1}>
-                      <div className={styles.base} />
-                      <div className={styles.byAudreyK}>Audrey M.</div>
-                      <div className={styles.byAudreyK}>2 Comments</div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </div>
-          </section>
-          <section className={styles.section}>
-            <div className={styles.blogNewsGroup}>
-              <b className={styles.blogNews1}>{`Blog & News`}</b>
-              <b className={styles.learnRecentNewsContainer1}>
-                <p className={styles.learnRecentPractices}>
-                  Learn Recent Practices
-                </p>
-                <p className={styles.learnRecentPractices}>News and Blogs</p>
-              </b>
-              <section className={styles.frameSection} data-animate-on-scroll>
-                <section className={styles.frameParent4}>
-                  <div className={styles.frameParent5} data-animate-on-scroll>
-                    <div className={styles.baseParent2}>
-                      <img
-                        className={styles.baseIcon}
-                        alt=""
-                        src="/base14@2x.png"
-                      />
-                      <div className={styles.vectorParent}>
-                        <img
-                          className={styles.groupChild}
-                          alt=""
-                          src="/vector-17.svg"
-                        />
-                        <div className={styles.div6}>25</div>
-                        <div className={styles.dec3}>DEC</div>
-                      </div>
-                    </div>
-                    <div className={styles.frameParent6}>
-                      <div
-                        className={styles.agrospectrumIsRevolutionizinParent}
-                      >
-                        <div
-                          className={
-                            styles.agrospectrumIsRevolutionizinContainer
-                          }
-                        >
-                          <p
-                            className={styles.learnRecentPractices}
-                          >{`Agrospectrum is Revolutionizing `}</p>
-                          <p className={styles.learnRecentPractices}>
-                            Agriculture Through Digital Innovation
-                          </p>
-                        </div>
-                        <div className={styles.digitalisationHasBeing}>
-                          <p className={styles.learnRecentPractices}>
-                            In the Ghanaian space and beyond we at
-                          </p>
-                          <p className={styles.agropspectrumHas}>
-                            Agropspectrum has equipped...
-                          </p>
-                        </div>
-                      </div>
-                      <div className={styles.baseParent3}>
-                        <div className={styles.base4} />
-                        <div className={styles.byAudreyK2}>By Audrey K</div>
-                        <div className={styles.byAudreyK2}>2 Comments</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className={styles.frameParent5} data-animate-on-scroll>
-                    <div className={styles.baseParent2}>
-                      <img
-                        className={styles.baseIcon}
-                        alt=""
-                        src="/base15@2x.png"
-                      />
-                      <div className={styles.vectorParent}>
-                        <img
-                          className={styles.groupChild}
-                          alt=""
-                          src="/vector-17.svg"
-                        />
-                        <div className={styles.div6}>25</div>
-                        <div className={styles.dec3}>DEC</div>
-                      </div>
-                    </div>
-                    <div className={styles.frameParent6}>
-                      <div
-                        className={styles.agrospectrumIsRevolutionizinParent}
-                      >
-                        <div
-                          className={
-                            styles.agrospectrumIsRevolutionizinContainer
-                          }
-                        >
-                          How Digitalization Connects Farmers with Global
-                          Opportunities"
-                        </div>
-                        <div className={styles.digitalisationHasBeing}>
-                          Digitalisation has being a an huge ddevelopmental step
-                          ....
-                        </div>
-                      </div>
-                      <div className={styles.baseParent3}>
-                        <div className={styles.base4} />
-                        <div className={styles.byAudreyK2}>By Audrey K</div>
-                        <div className={styles.byAudreyK2}>2 Comments</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className={styles.frameParent5} data-animate-on-scroll>
-                    <div className={styles.baseParent2}>
-                      <img
-                        className={styles.baseIcon}
-                        alt=""
-                        src="/base26@2x.png"
-                      />
-                      <div className={styles.vectorParent}>
-                        <img
-                          className={styles.groupChild}
-                          alt=""
-                          src="/vector-17.svg"
-                        />
-                        <div className={styles.div6}>25</div>
-                        <div className={styles.dec3}>DEC</div>
-                      </div>
-                    </div>
-                    <div className={styles.frameParent6}>
-                      <div
-                        className={styles.agrospectrumIsRevolutionizinParent}
-                      >
-                        <div
-                          className={
-                            styles.agrospectrumIsRevolutionizinContainer
-                          }
-                        >
-                          <p
-                            className={styles.learnRecentPractices}
-                          >{`A Deep Dive into the Impact of `}</p>
-                          <p className={styles.learnRecentPractices}>
-                            Agrospectrum on Agricultural Operations
-                          </p>
-                        </div>
-                        <div className={styles.digitalisationHasBeing}>
-                          Deep dive into Agrospectrum’s misson of
-                          revolutioinalizing the Agriculture industry across
-                          ....
-                        </div>
-                      </div>
-                      <div className={styles.baseParent3}>
-                        <div className={styles.base4} />
-                        <div className={styles.byAudreyK2}>By Audrey K</div>
-                        <div className={styles.byAudreyK2}>2 Comments</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className={styles.frameParent5} data-animate-on-scroll>
-                    <div className={styles.baseParent2}>
-                      <img
-                        className={styles.baseIcon}
-                        alt=""
-                        src="/base27@2x.png"
-                      />
-                      <div className={styles.vectorParent}>
-                        <img
-                          className={styles.groupChild}
-                          alt=""
-                          src="/vector-17.svg"
-                        />
-                        <div className={styles.div6}>25</div>
-                        <div className={styles.dec3}>DEC</div>
-                      </div>
-                    </div>
-                    <div className={styles.frameParent6}>
-                      <div
-                        className={styles.agrospectrumIsRevolutionizinParent}
-                      >
-                        <div
-                          className={
-                            styles.agrospectrumIsRevolutionizinContainer
-                          }
-                        >
-                          <p
-                            className={styles.learnRecentPractices}
-                          >{`Enhancing Agricultural Resilience Through `}</p>
-                          <p className={styles.learnRecentPractices}>
-                            Ignitia's Climate Monitoring"
-                          </p>
-                        </div>
-                        <div className={styles.digitalisationHasBeing}>
-                          Deep dive into Agrospectrum’s misson of
-                          revolutioinalizing the Agriculture industry across
-                          ....
-                        </div>
-                      </div>
-                      <div className={styles.baseParent3}>
-                        <div className={styles.base4} />
-                        <div className={styles.byAudreyK2}>By Audrey K</div>
-                        <div className={styles.byAudreyK2}>2 Comments</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className={styles.frameParent5} data-animate-on-scroll>
-                    <div className={styles.baseParent2}>
-                      <img
-                        className={styles.baseIcon}
-                        alt=""
-                        src="/base28@2x.png"
-                      />
-                      <div className={styles.vectorParent}>
-                        <img
-                          className={styles.groupChild}
-                          alt=""
-                          src="/vector-17.svg"
-                        />
-                        <div className={styles.div6}>25</div>
-                        <div className={styles.dec3}>DEC</div>
-                      </div>
-                    </div>
-                    <div className={styles.frameParent6}>
-                      <div
-                        className={styles.agrospectrumIsRevolutionizinParent}
-                      >
-                        <div
-                          className={
-                            styles.agrospectrumIsRevolutionizinContainer
-                          }
-                        >
-                          <p className={styles.learnRecentPractices}>
-                            A Sustainable Future with Agrospectrum's
-                          </p>
-                          <p className={styles.learnRecentPractices}>
-                            Environmental Impact Monitoring"
-                          </p>
-                        </div>
-                        <div className={styles.digitalisationHasBeing}>
-                          Deep dive into Agrospectrum’s misson of
-                          revolutioinalizing the Agriculture industry across
-                          ....
-                        </div>
-                      </div>
-                      <div className={styles.baseParent3}>
-                        <div className={styles.base4} />
-                        <div className={styles.byAudreyK2}>By Audrey K</div>
-                        <div className={styles.byAudreyK2}>2 Comments</div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </section>
-              <img className={styles.groupIcon} alt="" src="/group21.svg" />
-            </div>
-          </section>
-        </section>
         <div className={styles.footerComponent}>
           <div className={styles.component1}>
-            <div className={styles.frameParent15}>
+            <div className={styles.frameParent}>
               <div className={styles.download5Parent}>
                 <img
                   className={styles.download5Icon}
                   alt=""
-                  src="/download-540@2x.png"
+                  src="/download-59@2x.png"
                 />
                 <img
                   className={styles.download5Icon1}
                   alt=""
-                  src="/download-5411@2x.png"
+                  src="/download-510@2x.png"
                 />
                 <img
                   className={styles.captureIcon}
                   alt=""
-                  src="/capture21@2x.png"
+                  src="/capture5@2x.png"
                 />
                 <img
                   className={styles.mofaColorIcon}
                   alt=""
-                  src="/mofa-color19@2x.png"
+                  src="/mofa-color5@2x.png"
                 />
                 <img
                   className={styles.download3Icon}
                   alt=""
-                  src="/download-321@2x.png"
+                  src="/download-35@2x.png"
                 />
                 <img
                   className={styles.imagesIcon}
                   alt=""
-                  src="/images20@2x.png"
+                  src="/images4@2x.png"
                 />
                 <img
-                  className={styles.download6Icon1}
+                  className={styles.download6Icon}
                   alt=""
-                  src="/download-623@2x.png"
+                  src="/download-65@2x.png"
                 />
                 <img
                   className={styles.download1Icon}
                   alt=""
-                  src="/download-121@2x.png"
+                  src="/download-15@2x.png"
                 />
                 <img
                   className={styles.downloadIcon}
                   alt=""
-                  src="/download21@2x.png"
+                  src="/download5@2x.png"
                 />
                 <img
                   className={styles.images1Icon}
                   alt=""
-                  src="/images-121@2x.png"
+                  src="/images-15@2x.png"
                 />
                 <img
                   className={styles.download2Icon}
                   alt=""
-                  src="/download-221@2x.png"
+                  src="/download-25@2x.png"
                 />
               </div>
               <div className={styles.download5Group}>
                 <img
                   className={styles.download5Icon}
                   alt=""
-                  src="/download-542@2x.png"
+                  src="/download-511@2x.png"
                 />
                 <img
                   className={styles.download5Icon1}
                   alt=""
-                  src="/download-543@2x.png"
+                  src="/download-512@2x.png"
                 />
                 <img
                   className={styles.captureIcon}
                   alt=""
-                  src="/capture22@2x.png"
+                  src="/capture6@2x.png"
                 />
                 <img
                   className={styles.mofaColorIcon}
                   alt=""
-                  src="/mofa-color20@2x.png"
+                  src="/mofa-color6@2x.png"
                 />
                 <img
                   className={styles.download3Icon}
                   alt=""
-                  src="/download-322@2x.png"
+                  src="/download-36@2x.png"
                 />
                 <img
                   className={styles.imagesIcon}
                   alt=""
-                  src="/images21@2x.png"
+                  src="/images5@2x.png"
                 />
                 <img
-                  className={styles.download6Icon1}
+                  className={styles.download6Icon}
                   alt=""
-                  src="/download-624@2x.png"
+                  src="/download-66@2x.png"
                 />
                 <img
                   className={styles.download1Icon}
                   alt=""
-                  src="/download-122@2x.png"
+                  src="/download-16@2x.png"
                 />
                 <img
                   className={styles.downloadIcon}
                   alt=""
-                  src="/download22@2x.png"
+                  src="/download6@2x.png"
                 />
                 <img
                   className={styles.images1Icon}
                   alt=""
-                  src="/images-122@2x.png"
+                  src="/images-16@2x.png"
                 />
                 <img
                   className={styles.download2Icon}
                   alt=""
-                  src="/download-222@2x.png"
+                  src="/download-26@2x.png"
                 />
               </div>
             </div>
@@ -1049,9 +519,9 @@ const Media3: NextPage = () => {
                 <div className={styles.nuncUltricesTellusWrapper}>
                   <div className={styles.nuncUltricesTellusContainer}>
                     <p
-                      className={styles.learnRecentPractices}
+                      className={styles.transformYourAgricultural}
                     >{`Transform your agricultural practices and `}</p>
-                    <p className={styles.learnRecentPractices}>
+                    <p className={styles.transformYourAgricultural}>
                       <span className={styles.cultivateSuccessWith}>
                         cultivate success with
                       </span>
@@ -1061,7 +531,7 @@ const Media3: NextPage = () => {
                       </b>
                       <span>—empowering farmers, streamlining operations,</span>
                     </p>
-                    <p className={styles.learnRecentPractices}>
+                    <p className={styles.transformYourAgricultural}>
                       <span>{`and fostering a connected `}</span>
                       <b className={styles.cultivateSuccessWith}>
                         global community
@@ -1076,11 +546,11 @@ const Media3: NextPage = () => {
                   <div className={styles.getInTouch}>GET IN TOUCH</div>
                 </button>
               </div>
-              <div className={styles.frameParent16}>
-                <div className={styles.frameParent17}>
+              <div className={styles.frameGroup}>
+                <div className={styles.frameContainer}>
                   <div className={styles.nowWereParent}>
                     <div className={styles.nowWere2}>business</div>
-                    <div className={styles.frameParent18}>
+                    <div className={styles.frameDiv}>
                       <div className={styles.nowWereFrame}>
                         <div
                           className={styles.nowWere3}
@@ -1100,7 +570,7 @@ const Media3: NextPage = () => {
                       </div>
                       <div
                         className={styles.nowWereGroup}
-                        onClick={onFrameContainer32Click}
+                        onClick={onFrameContainer3Click}
                       >
                         <div
                           className={styles.nowWere6}
@@ -1111,25 +581,23 @@ const Media3: NextPage = () => {
                         <img
                           className={styles.frameChild}
                           alt=""
-                          src="/line-124@2x.png"
+                          src="/line-12@2x.png"
                         />
                       </div>
                     </div>
                   </div>
-                  <div className={styles.frameParent19}>
-                    <div className={styles.frameParent20}>
+                  <div className={styles.frameParent1}>
+                    <div className={styles.frameParent2}>
                       <div className={styles.nowWereWrapper3}>
                         <div className={styles.nowWere7}>{`CONTACT US `}</div>
                       </div>
                       <div className={styles.agrsopectrumLtd}>
-                        <span className={styles.e}>A</span>
+                        <span className={styles.a}>A</span>
                         <span
-                          className={styles.nhancingAgriculturalResilien}
+                          className={styles.grsopectrum}
                         >{`GRSOPECTRUM `}</span>
-                        <span className={styles.e}>l</span>
-                        <span className={styles.nhancingAgriculturalResilien}>
-                          TD
-                        </span>
+                        <span className={styles.a}>l</span>
+                        <span className={styles.grsopectrum}>TD</span>
                       </div>
                     </div>
                     <div className={styles.nowWereParent1}>
@@ -1142,7 +610,7 @@ const Media3: NextPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className={styles.frameParent21}>
+                <div className={styles.frameParent3}>
                   <div className={styles.nowWereParent3}>
                     <div className={styles.nowWere8}>BSL HEAD OFFICE</div>
                     <div className={styles.nowWere13}>No 24 Botwe</div>
@@ -1157,8 +625,8 @@ const Media3: NextPage = () => {
                   </div>
                 </div>
               </div>
-              <div className={styles.frameParent22}>
-                <button className={styles.frameButton}>
+              <div className={styles.frameParent4}>
+                <button className={styles.vectorParent}>
                   <img
                     className={styles.frameItem}
                     alt=""
@@ -1203,21 +671,21 @@ const Media3: NextPage = () => {
                       onClick={onInstagramContainerClick}
                     >
                       <img
-                        className={styles.groupIcon1}
+                        className={styles.groupIcon}
                         alt=""
-                        src="/group3.svg"
+                        src="/group.svg"
                       />
                     </div>
                     <div className={styles.facebook}>
                       <img
-                        className={styles.vectorIcon1}
+                        className={styles.vectorIcon}
                         alt=""
-                        src="/vector6.svg"
+                        src="/vector.svg"
                       />
                     </div>
                     <div className={styles.twitter}>
                       <img
-                        className={styles.vectorIcon2}
+                        className={styles.vectorIcon1}
                         alt=""
                         src="/vector7.svg"
                       />
@@ -1227,7 +695,7 @@ const Media3: NextPage = () => {
                       onClick={onLinkedinAgrospectremContainerClick}
                     >
                       <img
-                        className={styles.vectorIcon3}
+                        className={styles.vectorIcon2}
                         alt=""
                         src="/vector8.svg"
                       />
@@ -1237,7 +705,7 @@ const Media3: NextPage = () => {
               </div>
             </div>
           </footer>
-          <div className={styles.frameParent23}>
+          <div className={styles.frameParent5}>
             <div className={styles.lineWrapper}>
               <div className={styles.frameInner} />
             </div>
@@ -1265,4 +733,4 @@ const Media3: NextPage = () => {
   );
 };
 
-export default Media3;
+export default Media;
