@@ -34,7 +34,7 @@ const FooterFrames1: NextPage<FooterFrames1Type> = ({
     router.push("/projectspartners");
   }, [router]);
 
-  const onNowWereTextXClick = useCallback(() => {
+  const onNowWereText3Click = useCallback(() => {
     router.push("/projectspartners");
   }, [router]);
 

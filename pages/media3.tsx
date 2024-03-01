@@ -9,23 +9,23 @@ const Media3: NextPage = () => {
   const router = useRouter();
   const [isDrwawerMenuOpen, setDrwawerMenuOpen] = useState(false);
 
-  const onClipPathGroupClick = useCallback(() => {
+  const onClipPathGroup3Click = useCallback(() => {
     window.open("https://bsl.com.gh/");
   }, []);
 
-  const onClipPathGroup1Click = useCallback(() => {
+  const onClipPathGroup4Click = useCallback(() => {
     window.open("https://isg.com.gh/");
   }, []);
 
-  const onClipPathGroup2Click = useCallback(() => {
+  const onClipPathGroup5Click = useCallback(() => {
     window.open("https://sfl.com.gh/");
   }, []);
 
-  const onLgoFrameContainerClick = useCallback(() => {
+  const onLgoFrameContainer1Click = useCallback(() => {
     router.push("/");
   }, [router]);
 
-  const onHomeCContainerClick = useCallback(() => {
+  const onHomeCContainer1Click = useCallback(() => {
     router.push("/");
   }, [router]);
 
@@ -33,7 +33,7 @@ const Media3: NextPage = () => {
     router.push("/");
   }, [router]);
 
-  const onLinkAbout2Click = useCallback(() => {
+  const onLinkAbout1Click = useCallback(() => {
     router.push("/");
   }, [router]);
 
@@ -41,7 +41,7 @@ const Media3: NextPage = () => {
     router.push("/about-u-s-page");
   }, [router]);
 
-  const onLinkPricingClick = useCallback(() => {
+  const onLinkPricing1Click = useCallback(() => {
     router.push("/about-u-s-page");
   }, [router]);
 
@@ -49,7 +49,7 @@ const Media3: NextPage = () => {
     router.push("/product-services");
   }, [router]);
 
-  const onLinkPricing2Click = useCallback(() => {
+  const onLinkPricing12Click = useCallback(() => {
     // Please sync "product_services" to the project
   }, []);
 
@@ -57,7 +57,7 @@ const Media3: NextPage = () => {
     router.push("/projectspartners");
   }, [router]);
 
-  const onLinkPricing3Click = useCallback(() => {
+  const onLinkPricing13Click = useCallback(() => {
     router.push("/projectspartners");
   }, [router]);
 
@@ -65,7 +65,7 @@ const Media3: NextPage = () => {
     router.push("/media3");
   }, [router]);
 
-  const onLinkPricing4Click = useCallback(() => {
+  const onLinkPricing14Click = useCallback(() => {
     router.push("/media3");
   }, [router]);
 
@@ -81,7 +81,7 @@ const Media3: NextPage = () => {
     router.push("/contact-p-age");
   }, [router]);
 
-  const onContactUsTextClick = useCallback(() => {
+  const onContactUsText1Click = useCallback(() => {
     router.push("/contact-p-age");
   }, [router]);
 
@@ -236,26 +236,26 @@ const Media3: NextPage = () => {
               <div className={styles.logoasset}>
                 <button className={styles.arrowframe}>
                   <div
-                    className={styles.oursubsidiarylogos}
+                    className={styles.oursubsidiarylogos1}
                     id="ourSubsidiaries"
                   >
                     <img
                       className={styles.clipPathGroup}
                       alt=""
                       src="/clip-path-group3.svg"
-                      onClick={onClipPathGroupClick}
+                      onClick={onClipPathGroup3Click}
                     />
                     <img
                       className={styles.clipPathGroup1}
                       alt=""
                       src="/clip-path-group7@2x.png"
-                      onClick={onClipPathGroup1Click}
+                      onClick={onClipPathGroup4Click}
                     />
                     <img
                       className={styles.clipPathGroup2}
                       alt=""
                       src="/clip-path-group8@2x.png"
-                      onClick={onClipPathGroup2Click}
+                      onClick={onClipPathGroup5Click}
                     />
                     <img
                       className={styles.oursubsidiarylogosChild}
@@ -271,7 +271,7 @@ const Media3: NextPage = () => {
                 </button>
                 <div
                   className={styles.lgoframe}
-                  onClick={onLgoFrameContainerClick}
+                  onClick={onLgoFrameContainer1Click}
                 >
                   <img
                     className={styles.logoIcon}
@@ -283,14 +283,17 @@ const Media3: NextPage = () => {
               </div>
               <nav className={styles.rightnavlink}>
                 <div className={styles.homecParent}>
-                  <div className={styles.homec} onClick={onHomeCContainerClick}>
+                  <div
+                    className={styles.homec}
+                    onClick={onHomeCContainer1Click}
+                  >
                     <button
                       className={styles.linkAbout}
                       onClick={onLinkAboutClick}
                     >
                       <div
                         className={styles.linkAbout1}
-                        onClick={onLinkAbout2Click}
+                        onClick={onLinkAbout1Click}
                       >
                         Home
                       </div>
@@ -304,7 +307,7 @@ const Media3: NextPage = () => {
                   <button className={styles.aboutus} onClick={onAboutUsClick}>
                     <div
                       className={styles.linkPricing}
-                      onClick={onLinkPricingClick}
+                      onClick={onLinkPricing1Click}
                     >
                       About Us
                     </div>
@@ -315,7 +318,7 @@ const Media3: NextPage = () => {
                   >
                     <div
                       className={styles.linkPricing}
-                      onClick={onLinkPricing2Click}
+                      onClick={onLinkPricing12Click}
                     >{`Product & Services`}</div>
                   </button>
                   <button
@@ -324,13 +327,13 @@ const Media3: NextPage = () => {
                   >
                     <div
                       className={styles.linkPricing}
-                      onClick={onLinkPricing3Click}
+                      onClick={onLinkPricing13Click}
                     >{`Clients & Partners`}</div>
                   </button>
                   <button className={styles.media1} onClick={onMediaClick}>
                     <div
                       className={styles.linkPricing}
-                      onClick={onLinkPricing4Click}
+                      onClick={onLinkPricing14Click}
                     >
                       Media
                     </div>
@@ -352,7 +355,7 @@ const Media3: NextPage = () => {
                 >
                   <div
                     className={styles.contactUs}
-                    onClick={onContactUsTextClick}
+                    onClick={onContactUsText1Click}
                   >
                     Contact Us
                   </div>
@@ -380,7 +383,7 @@ const Media3: NextPage = () => {
             <div className={styles.cardText1} onClick={onCardText1Click}>
               <div className={styles.card}>
                 <div className={styles.img}>
-                  <img className={styles.blurIcon} alt="" src="/blur4@2x.png" />
+                  <img className={styles.blurIcon} alt="" src="/blur1@2x.png" />
                   <img className={styles.imgIcon} alt="" src="/img131@2x.png" />
                 </div>
               </div>
