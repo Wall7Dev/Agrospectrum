@@ -201,7 +201,7 @@ const ContactPAge: NextPage = () => {
                     <img
                       className={styles.homecChild}
                       alt=""
-                      src="/line-12@2x.png"
+                      src="/line-121@2x.png"
                     />
                   </div>
                   <button className={styles.aboutus} onClick={onAboutUsClick}>
@@ -356,7 +356,7 @@ const ContactPAge: NextPage = () => {
                   <img
                     className={styles.gradientmsgChild}
                     alt=""
-                    src="/group-206@2x.png"
+                    src="/group-2062@2x.png"
                     data-animate-on-scroll
                   />
                   <div className={styles.weSupportAgribusinessIndustParent}>

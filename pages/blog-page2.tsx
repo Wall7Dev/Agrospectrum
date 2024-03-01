@@ -488,7 +488,7 @@ const BlogPage2: NextPage = () => {
                 <img
                   className={styles.download5Icon}
                   alt=""
-                  src="/download-517@2x.png"
+                  src="/download-5172@2x.png"
                 />
                 <img
                   className={styles.download5Icon1}
@@ -503,7 +503,7 @@ const BlogPage2: NextPage = () => {
                 <img
                   className={styles.mofaColorIcon}
                   alt=""
-                  src="/mofa-color9@2x.png"
+                  src="/mofa-color91@2x.png"
                 />
                 <img
                   className={styles.download3Icon}
@@ -513,7 +513,7 @@ const BlogPage2: NextPage = () => {
                 <img
                   className={styles.imagesIcon}
                   alt=""
-                  src="/images8@2x.png"
+                  src="/images81@2x.png"
                 />
                 <img
                   className={styles.download6Icon}
@@ -528,7 +528,7 @@ const BlogPage2: NextPage = () => {
                 <img
                   className={styles.downloadIcon}
                   alt=""
-                  src="/download9@2x.png"
+                  src="/download91@2x.png"
                 />
                 <img
                   className={styles.images1Icon}
@@ -560,7 +560,7 @@ const BlogPage2: NextPage = () => {
                 <img
                   className={styles.mofaColorIcon}
                   alt=""
-                  src="/mofa-color10@2x.png"
+                  src="/mofa-color101@2x.png"
                 />
                 <img
                   className={styles.download3Icon}
@@ -794,7 +794,7 @@ const BlogPage2: NextPage = () => {
                       <img
                         className={styles.vectorIcon4}
                         alt=""
-                        src="/vector11.svg"
+                        src="/vector111.svg"
                       />
                     </div>
                   </div>

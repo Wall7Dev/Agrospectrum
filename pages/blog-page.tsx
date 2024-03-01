@@ -250,7 +250,7 @@ const BlogPage: NextPage = () => {
                     <img
                       className={styles.homecChild}
                       alt=""
-                      src="/line-121@2x.png"
+                      src="/line-1211@2x.png"
                     />
                   </div>
                   <button className={styles.aboutus} onClick={onAboutUsClick}>
@@ -410,7 +410,7 @@ const BlogPage: NextPage = () => {
               <img
                 className={styles.gradientmsgChild}
                 alt=""
-                src="/group-206@2x.png"
+                src="/group-2064@2x.png"
               />
               <div className={styles.weSupportAgribusinessIndustParent}>
                 <b
@@ -494,7 +494,7 @@ const BlogPage: NextPage = () => {
                 <img
                   className={styles.mofaColorIcon}
                   alt=""
-                  src="/mofa-color7@2x.png"
+                  src="/mofa-color72@2x.png"
                 />
                 <img
                   className={styles.download3Icon}
@@ -551,7 +551,7 @@ const BlogPage: NextPage = () => {
                 <img
                   className={styles.mofaColorIcon}
                   alt=""
-                  src="/mofa-color8@2x.png"
+                  src="/mofa-color82@2x.png"
                 />
                 <img
                   className={styles.download3Icon}
@@ -783,7 +783,7 @@ const BlogPage: NextPage = () => {
                       <img
                         className={styles.vectorIcon4}
                         alt=""
-                        src="/vector11.svg"
+                        src="/vector111.svg"
                       />
                     </div>
                   </div>

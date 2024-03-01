@@ -3,29 +3,29 @@ import { useState, useCallback, useEffect } from "react";
 import { useRouter } from "next/router";
 import DrwawerMenu from "../components/drwawer-menu";
 import PortalDrawer from "../components/portal-drawer";
-import styles from "./media.module.css";
+import styles from "./media3.module.css";
 
 const Media3: NextPage = () => {
   const router = useRouter();
   const [isDrwawerMenuOpen, setDrwawerMenuOpen] = useState(false);
 
-  const onClipPathGroup3Click = useCallback(() => {
+  const onClipPathGroupClick = useCallback(() => {
     window.open("https://bsl.com.gh/");
   }, []);
 
-  const onClipPathGroup4Click = useCallback(() => {
+  const onClipPathGroup1Click = useCallback(() => {
     window.open("https://isg.com.gh/");
   }, []);
 
-  const onClipPathGroup5Click = useCallback(() => {
+  const onClipPathGroup2Click = useCallback(() => {
     window.open("https://sfl.com.gh/");
   }, []);
 
-  const onLgoFrameContainer1Click = useCallback(() => {
+  const onLgoFrameContainerClick = useCallback(() => {
     router.push("/");
   }, [router]);
 
-  const onHomeCContainer1Click = useCallback(() => {
+  const onHomeCContainerClick = useCallback(() => {
     router.push("/");
   }, [router]);
 
@@ -33,7 +33,7 @@ const Media3: NextPage = () => {
     router.push("/");
   }, [router]);
 
-  const onLinkAbout1Click = useCallback(() => {
+  const onLinkAbout2Click = useCallback(() => {
     router.push("/");
   }, [router]);
 
@@ -41,7 +41,7 @@ const Media3: NextPage = () => {
     router.push("/about-u-s-page");
   }, [router]);
 
-  const onLinkPricing1Click = useCallback(() => {
+  const onLinkPricingClick = useCallback(() => {
     router.push("/about-u-s-page");
   }, [router]);
 
@@ -49,7 +49,7 @@ const Media3: NextPage = () => {
     router.push("/product-services");
   }, [router]);
 
-  const onLinkPricing12Click = useCallback(() => {
+  const onLinkPricing2Click = useCallback(() => {
     // Please sync "product_services" to the project
   }, []);
 
@@ -57,7 +57,7 @@ const Media3: NextPage = () => {
     router.push("/projectspartners");
   }, [router]);
 
-  const onLinkPricing13Click = useCallback(() => {
+  const onLinkPricing3Click = useCallback(() => {
     router.push("/projectspartners");
   }, [router]);
 
@@ -65,7 +65,7 @@ const Media3: NextPage = () => {
     router.push("/media");
   }, [router]);
 
-  const onLinkPricing14Click = useCallback(() => {
+  const onLinkPricing4Click = useCallback(() => {
     router.push("/media");
   }, [router]);
 
@@ -81,7 +81,7 @@ const Media3: NextPage = () => {
     router.push("/contact-p-age");
   }, [router]);
 
-  const onContactUsText1Click = useCallback(() => {
+  const onContactUsTextClick = useCallback(() => {
     router.push("/contact-p-age");
   }, [router]);
 
@@ -236,26 +236,26 @@ const Media3: NextPage = () => {
               <div className={styles.logoasset}>
                 <button className={styles.arrowframe}>
                   <div
-                    className={styles.oursubsidiarylogos1}
+                    className={styles.oursubsidiarylogos}
                     id="ourSubsidiaries"
                   >
                     <img
                       className={styles.clipPathGroup}
                       alt=""
                       src="/clip-path-group3.svg"
-                      onClick={onClipPathGroup3Click}
+                      onClick={onClipPathGroupClick}
                     />
                     <img
                       className={styles.clipPathGroup1}
                       alt=""
                       src="/clip-path-group7@2x.png"
-                      onClick={onClipPathGroup4Click}
+                      onClick={onClipPathGroup1Click}
                     />
                     <img
                       className={styles.clipPathGroup2}
                       alt=""
                       src="/clip-path-group8@2x.png"
-                      onClick={onClipPathGroup5Click}
+                      onClick={onClipPathGroup2Click}
                     />
                     <img
                       className={styles.oursubsidiarylogosChild}
@@ -271,7 +271,7 @@ const Media3: NextPage = () => {
                 </button>
                 <div
                   className={styles.lgoframe}
-                  onClick={onLgoFrameContainer1Click}
+                  onClick={onLgoFrameContainerClick}
                 >
                   <img
                     className={styles.logoIcon}
@@ -283,17 +283,14 @@ const Media3: NextPage = () => {
               </div>
               <nav className={styles.rightnavlink}>
                 <div className={styles.homecParent}>
-                  <div
-                    className={styles.homec}
-                    onClick={onHomeCContainer1Click}
-                  >
+                  <div className={styles.homec} onClick={onHomeCContainerClick}>
                     <button
                       className={styles.linkAbout}
                       onClick={onLinkAboutClick}
                     >
                       <div
                         className={styles.linkAbout1}
-                        onClick={onLinkAbout1Click}
+                        onClick={onLinkAbout2Click}
                       >
                         Home
                       </div>
@@ -307,7 +304,7 @@ const Media3: NextPage = () => {
                   <button className={styles.aboutus} onClick={onAboutUsClick}>
                     <div
                       className={styles.linkPricing}
-                      onClick={onLinkPricing1Click}
+                      onClick={onLinkPricingClick}
                     >
                       About Us
                     </div>
@@ -318,7 +315,7 @@ const Media3: NextPage = () => {
                   >
                     <div
                       className={styles.linkPricing}
-                      onClick={onLinkPricing12Click}
+                      onClick={onLinkPricing2Click}
                     >{`Product & Services`}</div>
                   </button>
                   <button
@@ -327,13 +324,13 @@ const Media3: NextPage = () => {
                   >
                     <div
                       className={styles.linkPricing}
-                      onClick={onLinkPricing13Click}
+                      onClick={onLinkPricing3Click}
                     >{`Clients & Partners`}</div>
                   </button>
                   <button className={styles.media1} onClick={onMediaClick}>
                     <div
                       className={styles.linkPricing}
-                      onClick={onLinkPricing14Click}
+                      onClick={onLinkPricing4Click}
                     >
                       Media
                     </div>
@@ -355,7 +352,7 @@ const Media3: NextPage = () => {
                 >
                   <div
                     className={styles.contactUs}
-                    onClick={onContactUsText1Click}
+                    onClick={onContactUsTextClick}
                   >
                     Contact Us
                   </div>
@@ -375,7 +372,7 @@ const Media3: NextPage = () => {
               <div className={styles.card}>
                 <div className={styles.img}>
                   <img className={styles.blurIcon} alt="" src="/blur@2x.png" />
-                  <img className={styles.imgIcon} alt="" src="/img12@2x.png" />
+                  <img className={styles.imgIcon} alt="" src="/img121@2x.png" />
                 </div>
               </div>
               <div className={styles.events}>Events</div>
@@ -384,7 +381,7 @@ const Media3: NextPage = () => {
               <div className={styles.card}>
                 <div className={styles.img}>
                   <img className={styles.blurIcon} alt="" src="/blur4@2x.png" />
-                  <img className={styles.imgIcon} alt="" src="/img13@2x.png" />
+                  <img className={styles.imgIcon} alt="" src="/img131@2x.png" />
                 </div>
               </div>
               <div className={styles.events}>Awards</div>
@@ -392,8 +389,12 @@ const Media3: NextPage = () => {
             <div className={styles.cardText2}>
               <div className={styles.card}>
                 <div className={styles.img}>
-                  <img className={styles.blurIcon} alt="" src="/blur7@2x.png" />
-                  <img className={styles.imgIcon} alt="" src="/img14@2x.png" />
+                  <img
+                    className={styles.blurIcon}
+                    alt=""
+                    src="/blur71@2x.png"
+                  />
+                  <img className={styles.imgIcon} alt="" src="/img141@2x.png" />
                 </div>
               </div>
               <div className={styles.events}>Input Credit</div>
@@ -406,7 +407,11 @@ const Media3: NextPage = () => {
                     alt=""
                     src="/blur3@2x.png"
                   />
-                  <img className={styles.imgIcon3} alt="" src="/img15@2x.png" />
+                  <img
+                    className={styles.imgIcon3}
+                    alt=""
+                    src="/img151@2x.png"
+                  />
                 </div>
               </div>
               <div className={styles.events}>Mountaineer</div>
@@ -430,7 +435,7 @@ const Media3: NextPage = () => {
               <img
                 className={styles.bgBlurIcon}
                 alt=""
-                src="/bg-blur6@2x.png"
+                src="/bg-blur61@2x.png"
               />
               <div className={styles.button}>
                 <div className={styles.div1}>→</div>
@@ -905,7 +910,7 @@ const Media3: NextPage = () => {
                   </div>
                 </section>
               </section>
-              <img className={styles.groupIcon} alt="" src="/group2.svg" />
+              <img className={styles.groupIcon} alt="" src="/group21.svg" />
             </div>
           </section>
         </section>
@@ -921,7 +926,7 @@ const Media3: NextPage = () => {
                 <img
                   className={styles.download5Icon1}
                   alt=""
-                  src="/download-541@2x.png"
+                  src="/download-5411@2x.png"
                 />
                 <img
                   className={styles.captureIcon}

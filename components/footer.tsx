@@ -229,7 +229,7 @@ const Footer: NextPage = () => {
                 className={styles.instagram}
                 onClick={onInstagramContainerClick}
               >
-                <img className={styles.groupIcon} alt="" src="/group1.svg" />
+                <img className={styles.groupIcon} alt="" src="/group11.svg" />
               </div>
               <div className={styles.facebook}>
                 <img className={styles.vectorIcon} alt="" src="/vector31.svg" />

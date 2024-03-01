@@ -142,13 +142,13 @@ const BlogPage3: NextPage = () => {
                     <img
                       className={styles.clipPathGroup1}
                       alt=""
-                      src="/clip-path-group5@2x.png"
+                      src="/clip-path-group52@2x.png"
                       onClick={onClipPathGroup1Click}
                     />
                     <img
                       className={styles.clipPathGroup2}
                       alt=""
-                      src="/clip-path-group6@2x.png"
+                      src="/clip-path-group62@2x.png"
                       onClick={onClipPathGroup2Click}
                     />
                     <img
@@ -192,7 +192,7 @@ const BlogPage3: NextPage = () => {
                     <img
                       className={styles.homecChild}
                       alt=""
-                      src="/line-111@2x.png"
+                      src="/line-1111@2x.png"
                     />
                   </div>
                   <button className={styles.aboutus} onClick={onAboutUsClick}>
@@ -363,7 +363,7 @@ const BlogPage3: NextPage = () => {
               <img
                 className={styles.gradientmsgChild}
                 alt=""
-                src="/group-2062@2x.png"
+                src="/group-20621@2x.png"
               />
               <div className={styles.weSupportAgribusinessIndustParent}>
                 <b

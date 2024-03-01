@@ -160,7 +160,7 @@ const ProductServices: NextPage = () => {
                     <img
                       className={styles.homecChild}
                       alt=""
-                      src="/line-12@2x.png"
+                      src="/line-121@2x.png"
                     />
                   </div>
                   <button className={styles.aboutus} onClick={onAboutUsClick}>
